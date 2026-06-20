@@ -1,0 +1,25 @@
+* {
+    box-sizing: border-box;
+    } 
+
+    body {
+        font-family: 'Gill Sans', sans-serif;
+        color: rgb(56, 35, 212);
+        padding: 20px;
+    }
+
+    h3 {
+        font-size: 36px;
+    }
+
+    p {
+        font-size: 28px;
+    }
+
+    #invite{
+        height:1059px;
+        width: 736px;
+        background-image: url('../static/imgs/cat-party1.jpg');
+        background-size: contain;
+        padding: 250px;
+    }
