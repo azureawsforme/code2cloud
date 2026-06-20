@@ -5,13 +5,13 @@
     </head>
         <body>
             <div id="invite">
-            <h3>Dear Friends,</h3>
+            <h3>Dear {{ to }},</h3>
 
-                <p>We are excited to invite you to our upcoming <strong>Mahima's party!</strong><br>
-                    <strong>Date:</strong> 1st October 2026<br>
-                    <strong>Time:</strong> 6 PM<br>           
+                <p>We are excited to invite you to our upcoming <strong>{{ event_name }}</strong><br>
+                    <strong>Date:</strong> {{ date }} <br>
+                    <strong>Time:</strong> {{ time }}<br>           
                 <p>See you there!</p>
-                <p><em> Raghavendra Rao S K </em><br></p>
+                <p><em> {{ sender }} </em><br></p>
             </div>
         </body>
 
