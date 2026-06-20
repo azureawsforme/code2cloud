@@ -11,7 +11,12 @@ def view_invite():
     time = " 6 PM "
     sender = "Raghu"
 
-    template="invite-kids.html"
+    #http://localhost:8080/view?=kids
+    style = request.args.get('style')
+
+    template = "invite-" + style + ".html"
+    
+    
     return render_template(template, to=to, event_name=event,date=date,time=time,sender=sender)
 
 if __name__ == '__main__' :
