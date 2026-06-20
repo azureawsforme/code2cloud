@@ -9,7 +9,7 @@
         <form action="/view" method="GET">
             
             <label for="style"> choose a style :</label>
-            
+
             <select name="style" id="style">
                 <option value="kids">Kids Party </option>
                 <option value="cat">Cat </option>
@@ -28,13 +28,23 @@
 
             <div>
             <label for="date"> what date is the event? : </label>
+            <input type="date" id="date" name="date" required>
+            </div>
+
+            <div>
+            <label for="time"> What time is the event : </label>
+            <input type="time" id="time" name="time" required>
+            </div> 
+
+            <!-- <div>
+            <label for="date"> what date is the event? : </label>
             <input name="date" id="event" placeholder="42nd of Mocktober" required>
             </div> 
 
             <div>
             <label for="time"> What time is the event : </label>
             <input name="time" id="time" placeholder="3 PM" required>
-            </div>   
+            </div>    -->
 
             <div>
             <label for="sender"> Your Name : </label>
