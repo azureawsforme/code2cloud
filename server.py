@@ -74,6 +74,7 @@ def event_rsvps(event_file):
     attendees = attendees.split("\n")
     print(attendees)
     return render_template("event-rsvp.html", attendees=attendees)
+    print(event_file)
 
 # The route that handles the RSVP button from the invitaiton page
 @app.route("/rsvp", methods=('GET', 'POST'))
@@ -138,4 +139,4 @@ def sync_blob(event_ID,attendee):
 
 if __name__ == '__main__' :
     app.run(debug=True, use_reloader=True, host='0.0.0.0',port=8080)
-    #sync_blob("jim|bday party","Yogesh")
+    #sync_blob("jim|bday party","Sahana")
