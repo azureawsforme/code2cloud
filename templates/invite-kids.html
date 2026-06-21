@@ -11,10 +11,16 @@
                     <strong>Date:</strong> {{ date }} <br>
                     <strong>Time:</strong> {{ time }}<br>           
                 <p>See you there!</p>
-                <p><em> {{ sender }} </em><br></p>
+                <p><em> {{ sender }} </em><br></p>//
+
+                <button id="rspv-button" onclick="sendRsvp(this.value)" value="{{ to }}, {{ eventId }}"> I will be there </button>
+                <h2 id="see you there" hidden="true"> GREAT!!! We will see you there ! 💃 </h2>
             </div>
         </body>
 
+        
+    
+    <script src="/static/rspv.js"></script>    
 
 </html>
 
